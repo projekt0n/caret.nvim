@@ -26,7 +26,7 @@ After dedicating approximately 3 years to the development of caret.nvim, I am co
 
 ## Requirements
 
-- Neovim >= 0.8.0
+- Neovim >= 0.7.0
 - True color support
 - Undercurl terminal support (optional)
 
