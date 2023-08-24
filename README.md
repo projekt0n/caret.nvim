@@ -4,17 +4,17 @@ The timeless colorscheme for neovim text editor.
 
 ---
 
-The primary focus of the 'caret' color scheme is to provide a user-friendly and visually pleasing coding color scheme for developers.
+The primary focus of the 'caret' color scheme is to provide a user-friendly and visually pleasing coding color scheme for colorblind and normal developers.
 
 This project was initiated during my pursuit of a computer science education. Leveraging the rich heritage of my family's Bandhani (tie-dye textile) craftsmanship, which spans seven generations, I have seamlessly integrated this legacy of expertise into the creation of this color scheme.
 
 #### Work in Progress: Why?
 
-This color scheme is actively under development, and the final colors have not yet been confirmed. Minor adjustments might occur in future updates. As development is ongoing, creating ports for other platforms is currently impractical. However, a separate repository under the [projekt0n](https://github.com/projekt0n) organization will maintain Terminal themes, ports, and additional themes once a stable version is released.
+This color scheme is actively under development, and the final colors have not yet been confirmed. Minor adjustments might occur in future updates. As development is ongoing, creating ports for other platforms is currently impractical.
 
-While Terminal themes will remain static, the Neovim theme **will be AI-generated**. This approach aims to enhance code visibility for various programming languages and written context of individual buffer.
+However, a separate repository under the [projekt0n](https://github.com/projekt0n) organization will maintain Terminal themes, ports, and additional themes once a stable version is released. The Terminal themes will remain static, while the Neovim theme is **planned to be real-time AI-generated**. This aims to improve code visibility for various programming languages and written context in buffers.
 
-The current state of the color scheme is comparable to luxury oudh. Initial usage might not be instantly appealing. However, upon testing alternatives and making comparisons, you may find it intriguing. Similar to oudh fragrance, which not everyone appreciates initially, this scheme might require genuine respect to fully grasp its value. (The best oudh is often kept hidden until true admiration is sensed.)
+The current state of the color scheme is comparable to oudh. Initial usage might not be instantly appealing. However, upon testing alternatives and making comparisons, you may find it intriguing. Similar to oudh fragrance, which not everyone appreciates initially, this scheme might require genuine respect to fully grasp its value.
 
 #### Sponsorware
 
@@ -118,16 +118,6 @@ colorscheme caret
 
 ```lua
 vim.cmd('colorscheme caret')
-```
-
-To use light theme set vim option `background` to `light`
-
-```vim
-set background=light
-```
-
-```lua
-vim.o.background = 'light'
 ```
 
 ## Screenshots
