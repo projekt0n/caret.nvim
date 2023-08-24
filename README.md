@@ -1,14 +1,26 @@
 ![caret.nvim](https://github.com/projekt0n/caret.nvim/assets/24286590/558ae624-ad21-42c9-b5af-8d0663b44998)
 
-**[WIP]** The timeless colorscheme for neovim text editor.
+The timeless colorscheme for neovim text editor.
 
 ---
 
-The primary focus of 'caret' colorscheme is to provide a user-friendly and visually pleasing coding color scheme for developers. This project was initiated during my pursuit of computer science education. Leveraging the rich heritage of my family's Bandhani (tie-dye textile) craftsmanship, spanning seven generations, I have seamlessly integrated this legacy of expertise into the creation of this colorscheme.
+The primary focus of the 'caret' color scheme is to provide a user-friendly and visually pleasing coding color scheme for developers.
+
+This project was initiated during my pursuit of a computer science education. Leveraging the rich heritage of my family's Bandhani (tie-dye textile) craftsmanship, which spans seven generations, I have seamlessly integrated this legacy of expertise into the creation of this color scheme.
+
+#### Work in Progress: Why?
+
+This color scheme is actively under development, and the final colors have not yet been confirmed. Minor adjustments might occur in future updates. As development is ongoing, creating ports for other platforms is currently impractical. However, a separate repository under the [projekt0n](https://github.com/projekt0n) organization will maintain Terminal themes, ports, and additional themes once a stable version is released.
+
+While Terminal themes will remain static, the Neovim theme **will be AI-generated**. This approach aims to enhance code visibility for various programming languages and written context of individual buffer.
+
+The current state of the color scheme is comparable to luxury oudh. Initial usage might not be instantly appealing. However, upon testing alternatives and making comparisons, you may find it intriguing. Similar to oudh fragrance, which not everyone appreciates initially, this scheme might require genuine respect to fully grasp its value. (The best oudh is often kept hidden until true admiration is sensed.)
 
 #### Sponsorware
 
-After dedicating approximately 3 years to the development of caret.nvim, I am considering the option of offering it as sponsorware. This would enable users and organizations to contribute to the continued development, maintenance, and quicker release of upcoming versions, as well as potential ports. Your support would be greatly appreciated.
+After dedicating approximately 3 years to the ongoing development of 'caret', I am considering the option of setting a sponsorship threshold and, upon reaching it, making it freely available to the world!
+
+This approach would allow users and organizations to contribute to the continuous development, maintenance, quicker release of upcoming versions, and potential ports. Your support would be highly appreciated.
 
 <!-- If you're interested, you can learn more about 'sponsor-spotlight' on
  https://dev.to/ful1e5/lets-give-recognition-to-those-supporting-our-work-on-github-sponsors-b00 -->
@@ -149,22 +161,68 @@ vim.cmd('colorscheme caret')
 
 ![caret_light](https://github.com/projekt0n/caret.nvim/assets/24286590/3cf638c7-76dd-444f-9097-9f8fa721917e)
 
+## Configuration
+
+There is no need to call `setup` if you don't want to change the default options and settings.
+
+```lua
+-- Default options
+require('caret').setup({
+  options = {
+    transparent = false,       -- Set to true to disable background setting
+    inverted_signs = false,    -- Controls inverted Signcolumn highlighting
+    styles = {                 -- Define styles for various syntax groups
+      bold = true,
+      italic = true,
+      strikethrough = true,
+      undercurl = true,
+      underline = true,
+    },
+    inverse = {                -- Determines inverse highlights for different types
+      match_paren = false,
+      visual = false,
+      search = false,
+    },
+  },
+  mapping = {                  -- Configure key mappings
+    toggle_bg = nil,           -- Assign a specific key for toggling background
+  },
+  groups = {},                 -- Override default highlight groups here
+})
+
+-- setup must be called before loading
+vim.opt.background = 'dark'
+vim.cmd('colorscheme caret')
+```
+
 ## Supported Plugins
 
 - [Builtin lsp diagnostics](https://neovim.io/doc/user/lsp.html)
 - [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
 - [circles.nvim](https://github.com/projekt0n/circles.nvim)
-- [neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim)
 - [nvim-tree.lua](https://github.com/kyazdani42/nvim-tree.lua)
 - [nvim-notify](https://github.com/rcarriga/nvim-notify)
 - [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
 
 ## TODO
 
-- [ ] Supports more plugins
-- [ ] Enhance syntax highlights
-- [ ] Port to others
-- [ ] Generate Syntax colors using AI to enhance the code visibility per file and file format
+- [ ] Support more plugins
+- [ ] Enhance syntax highlighting
+- [ ] Port to other platforms
+- [ ] Generate syntax colors using AI to improve code visibility for each file and file format
+
+## Development Guidelines
+
+- Avoid adding/requesting unnecessary features to the codebase.
+- Modularize the code to enhance comprehensibility.
+- Support older Neovim versions as much as possible.
+- Refrain from implementing hyped features into this colorscheme without prior discussion.
+- Take colorblindness into consideration when making color-related changes.
+- Have a Fun!
+
+## Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md)
 
 ## Copying
 
