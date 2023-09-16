@@ -12,13 +12,13 @@ This project was initiated during my pursuit of a computer science education. Le
 
 This color scheme is actively under development, and the final colors have not yet been confirmed. Minor adjustments might occur in future updates. As development is ongoing, creating ports for other platforms is currently impractical.
 
-However, a separate repository under the [projekt0n](https://github.com/projekt0n) organization will maintain Terminal themes, ports, and additional themes once a stable version is released. The Terminal themes will remain static, while the Neovim theme is **planned to be real-time AI-generated**. This aims to improve code visibility for various programming languages and written context in buffers.
+However, a separate repository under the [projekt0n](https://github.com/projekt0n) organization will maintain Terminal themes, ports, and additional themes once a stable version is released. The Terminal themes will remain static, while the Neovim theme is **planned to be real-time AI-generated**. This aims to improve code visibility for various programming languages and generate colors by understanding code.
 
-The current state of the color scheme is comparable to oudh. Initial usage might not be instantly appealing. However, upon testing alternatives and making comparisons, you may find it intriguing. Similar to oudh fragrance, which not everyone appreciates initially, this scheme might require genuine respect to fully grasp its value.
+The current state of the color scheme is comparable to oudh. Initial usage might not be instantly appealing. However, upon testing alternatives and making comparisons, you may find it intriguing.
 
 #### Sponsorware
 
-After dedicating approximately 3 years to the ongoing development of 'caret', I am considering the option of setting a sponsorship threshold and, upon reaching it, making it freely available to the world!
+After dedicating approximately 3 years to the ongoing development of this colorscheme, I am considering the option of setting a sponsorship threshold and, upon reaching it, making release freely available to the world!
 
 This approach would allow users and organizations to contribute to the continuous development, maintenance, quicker release of upcoming versions, and potential ports. Your support would be highly appreciated.
 
@@ -198,7 +198,7 @@ vim.cmd('colorscheme caret')
 
 - [ ] Support more plugins
 - [ ] Enhance syntax highlighting
-- [ ] Port to other platforms
+- [ ] Ports
 - [ ] Generate syntax colors using AI to improve code visibility for each file and file format
 
 ## Development Guidelines
