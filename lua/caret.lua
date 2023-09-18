@@ -566,8 +566,6 @@ M.setup = function(user_config)
     vim.api.nvim_set_hl(0, group, settings)
   end
 
-  vim.cmd.colorscheme('caret')
-
   -- toggle background keybinding
   if M.config.mapping.toggle_bg ~= nil then
     vim.keymap.set('n', M.config.mapping.toggle_bg, function()

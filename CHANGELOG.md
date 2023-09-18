@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+### Issues Fix
+
+- Removed internal `colorscheme` command in `setup` func (fixes #1)
+
 ## [v1.0.0] - 16 September 2023
 
 ### Added
