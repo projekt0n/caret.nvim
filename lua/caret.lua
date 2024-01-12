@@ -240,6 +240,7 @@ local set_hlgroups = function()
     -- TermCursorNC                       = {}, -- cursor in an unfocused terminal
     ErrorMsg = { bg = c.red, fg = c.bg0, bold = s.bold }, -- error messages on the command line
     VertSplit = { bg = opt.transparent and c.none or c.bg0, fg = c.bg3 }, -- the column separating vertically split windows
+    WinSeparator = { bg = opt.transparent and c.none or c.bg0, fg = c.bg3 }, -- (neovim>=0.10)the column separating vertically split windows
     Folded = { bg = c.bg1, fg = c.fg3, italic = s.italic }, -- line used for closed folds
     FoldColumn = { link = 'Folded' }, -- 'foldcolumn'
     SignColumn = { bg = c.bg1 }, -- column where |signs| are displayed
